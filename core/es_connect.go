@@ -19,5 +19,6 @@ func EsConnect() {
 		return
 	}
 
+	// 将全局变量 global.EsClient 设置为传入的 Elasticsearch 客户端实例，确保全局范围内可以访问该客户端。
 	global.EsClient = client
 }
