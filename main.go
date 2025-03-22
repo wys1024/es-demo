@@ -4,6 +4,7 @@ import (
 	"es-demo/core"
 	"es-demo/docs"
 	"es-demo/global"
+	"es-demo/indexs"
 	"log"
 )
 
@@ -12,8 +13,8 @@ func main() {
 	core.EsConnect()
 	log.Println(global.EsClient)
 
-	//// 创建索引
-	//indexs.CreateIndex()
+	// 创建索引
+	indexs.CreateIndex()
 
 	docs.DoCreate()
 }
